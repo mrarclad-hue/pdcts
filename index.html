@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player - Estudos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Meus Podcasts</h1>
+            <p>Legislação e Estudos</p>
+        </header>
+
+        <main>
+            <div class="player-container">
+                <h2 id="atual-titulo">Selecione um áudio</h2>
+                <audio id="main-audio" controls>
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+                
+                <div class="playback-speed">
+                    <label>Velocidade:</label>
+                    <select id="speed-select">
+                        <option value="0.5">0.5x</option>
+                        <option value="1" selected>1.0x (Normal)</option>
+                        <option value="1.25">1.25x</option>
+                        <option value="1.5">1.5x</option>
+                        <option value="2">2.0x</option>
+                    </select>
+                </div>
+            </div>
+
+            <ul class="playlist" id="playlist">
+                <li data-src="podcasts/Título I - Das Disposições Preliminares.mp3">Título I - Das Disposições Preliminares</li>
+                <li data-src="podcasts/Título II – Do Poder Legislativo.mp3">Título II – Do Poder Legislativo</li>
+                <li data-src="podcasts/Título III – Do Poder Executivo.mp3">Título III - Do Poder Executivo</li>
+                <li data-src="podcasts/Título IV – Da Organização Municipal.mp3">Título IV – Da Organização Municipal</li>
+                <li data-src="podcasts/Título V – Da Administração Financeira.mp3">Título V – Da Administração Financeira</li>
+                <li data-src="podcasts/Título VI – Da Ordem Econômica e Social.mp3">Título VI – Da Ordem Econômica e Social</li>
+            </ul>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
